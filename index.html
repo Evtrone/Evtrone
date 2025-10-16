@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVTRONE - Keep Charge, Make Move.</title>
+    <title>About EVTRONE - India's Trusted EV Charging Partner</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter for body text and Poppins for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons, as a common alternative to custom SVG icons -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,9 +14,12 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">EVTRONE</a>
+                <div class="menu-toggle">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="services.html">Solutions</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -31,215 +33,120 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-background-image">
-                <!-- Using the provided image URL for the background -->
-                <img src="https://www.servotech.in/_next/image?url=%2Fimages%2Fev%2Fev_banner.webp&w=3840&q=75" alt="EV charging in Indian city">
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-content container">
-                <h1>Keep Charge, Make Move.</h1>
-                <div class="hero-ctas">
-                    <a href="#" class="btn btn-primary">Book Installation</a>
-                    <a href="products.html" class="btn btn-secondary">Explore Products</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-us" class="about-section section-padding">
+        <section class="page-hero bg-dark text-white text-center">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <!-- Image illustrating Indian engineering/innovation from Unsplash -->
-                        <img src="https://images.unsplash.com/photo-1596541223130-58c4224ec08b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Indian Innovation">
-                    </div>
-                    <div class="about-text">
-                        <h2>About EVTRONE</h2>
-                        <h3>Story of Innovation</h3>
-                        <p>Founded on the principles of sustainable tomorrow, EVTRONE is driven by a vision to power India's electric vehicle revolution. We are a pioneering Indian company committed to designing, manufacturing, and installing advanced EV charging solutions.</p>
-                        <h3>Vision for Sustainable Mobility</h3>
-                        <p>Our vision is to build a robust, accessible, and smart EV charging infrastructure across India, enabling a cleaner, greener future for generations to come.</p>
-                        <p>Pioneering Indian Engineering: With a strong focus on R&D, we pride ourselves on leveraging cutting-edge technology and superior Indian engineering to deliver IS & BIS certified chargers that are safe, reliable, and highly efficient. Our commitment to quality and safety is unwavering.</p>
-                        <a href="about.html" class="btn btn-link">Learn More About Us</a>
-                    </div>
-                </div>
+                <h1>About EVTRONE</h1>
+                <p class="section-subtitle">Pioneering a sustainable future for India's electric mobility.</p>
             </div>
         </section>
 
-        <section id="our-products" class="products-overview section-padding bg-light">
+        <section class="section-padding vision-mission">
             <div class="container">
-                <h2>Our Products</h2>
-                <p class="section-subtitle">Innovative charging solutions for every need.</p>
-                <div class="product-cards">
-                    <div class="product-card">
-                        <!-- Using Font Awesome icon for home charger -->
-                        <i class="fas fa-home-lg-alt fa-3x product-icon"></i>
-                        <h3>Home Charger (AC Type 2)</h3>
-                        <p>Reliable and efficient charging for your home.</p>
-                        <a href="products.html#home" class="btn btn-text">View Details</a>
+                <div class="vision-mission-grid">
+                    <div class="vision-item text-center">
+                        <i class="fas fa-eye fa-4x text-primary mb-4"></i>
+                        <h2>Our Vision</h2>
+                        <p>To be India's most trusted and innovative EV charging brand, empowering an accessible and sustainable electric mobility ecosystem for everyone, everywhere.</p>
                     </div>
-                    <div class="product-card">
-                        <!-- Using Font Awesome icon for commercial charger -->
-                        <i class="fas fa-charging-station fa-3x product-icon"></i>
-                        <h3>Commercial / Public DC Fast Chargers</h3>
-                        <p>High-speed charging for businesses and public spaces.</p>
-                        <a href="products.html#commercial" class="btn btn-text">View Details</a>
+                    <div class="mission-item text-center">
+                        <i class="fas fa-bullseye fa-4x text-primary mb-4"></i>
+                        <h2>Our Mission</h2>
+                        <p>To design, manufacture, and deliver high-quality, reliable, and smart EV charging solutions across India, backed by unparalleled customer support and a commitment to green technology.</p>
                     </div>
-                    <div class="product-card">
-                        <!-- Using Font Awesome icon for solar-integrated charging -->
-                        <i class="fas fa-solar-panel fa-3x product-icon"></i>
-                        <h3>Solar-integrated Charging Units</h3>
-                        <p>Harness the power of the sun for sustainable EV charging.</p>
-                        <a href="products.html#solar" class="btn btn-text">View Details</a>
-                    </div>
-                    <div class="product-card">
-                        <!-- Using Font Awesome icon for smart app connectivity -->
-                        <i class="fas fa-mobile-alt fa-3x product-icon"></i>
-                        <h3>Smart App Connectivity</h3>
-                        <p>Monitor, control, and optimize your charging with ease.</p>
-                        <a href="products.html#smart-app" class="btn btn-text">View Details</a>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="products.html" class="btn btn-primary mt-4">Explore All Products</a>
                 </div>
             </div>
         </section>
 
-        <section id="why-choose" class="why-choose-us section-padding">
+        <section class="section-padding bg-light story-section">
             <div class="container">
-                <h2>Why Choose EVTRONE?</h2>
-                <p class="section-subtitle">Experience the EVTRONE advantage.</p>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <!-- Using Font Awesome icon for IoT monitoring -->
-                        <i class="fas fa-microchip fa-3x feature-icon"></i>
-                        <h3>Smart IoT Monitoring</h3>
-                        <p>Real-time data and remote management for optimal performance.</p>
-                    </div>
-                    <div class="feature-item">
-                        <!-- Using Font Awesome icon for 24/7 support -->
-                        <i class="fas fa-headset fa-3x feature-icon"></i>
-                        <h3>24/7 Customer Support</h3>
-                        <p>Dedicated assistance whenever you need it, nationwide.</p>
-                    </div>
-                    <div class="feature-item">
-                        <!-- Using Font Awesome icon for certification -->
-                        <i class="fas fa-award fa-3x feature-icon"></i>
-                        <h3>IS & BIS Certified Chargers</h3>
-                        <p>Meeting the highest Indian quality and safety standards.</p>
-                    </div>
-                    <div class="feature-item">
-                        <!-- Using Font Awesome icon for subsidy assistance -->
-                        <i class="fas fa-hand-holding-usd fa-3x feature-icon"></i>
-                        <h3>Government EV Subsidy Assistance</h3>
-                        <p>We help you navigate and avail eligible government benefits.</p>
-                    </div>
+                <h2 class="text-center mb-5">The EVTRONE Story: Fueling India's EV Revolution</h2>
+                <div class="story-content">
+                    <p>At EVTRONE, we believe in the transformative power of electric mobility. Founded with a vision to accelerate India's transition to a sustainable transportation future, we embarked on a journey to provide cutting-edge EV charging infrastructure that is both accessible and reliable.</p>
+                    <p>Our roots are deeply embedded in Indian innovation. We combine local engineering prowess with global technological advancements to create products tailored for the diverse needs of the Indian market. From the bustling streets of metropolitan cities to the quiet highways, our solutions are designed to keep India moving.</p>
+                    <p>We started small, with a dedicated team of engineers and visionaries passionate about clean energy. Today, EVTRONE stands as a testament to perseverance, quality, and a relentless pursuit of excellence. Every charger we produce, every installation we complete, and every customer we serve is a step towards a greener, more electrified India.</p>
+                    <p>Our commitment extends beyond just manufacturing. We are actively involved in R&D, exploring new frontiers in smart charging, solar integration, and battery management to ensure we remain at the forefront of the industry. We are not just selling chargers; we are building a network, a community, and a legacy of sustainable progress.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Optional: Charging Network Map Section -->
-        <section id="network-map" class="network-map-section bg-light section-padding">
+        <section class="section-padding core-values">
             <div class="container">
-                <h2>Our Growing Charging Network</h2>
-                <p class="section-subtitle">Find EVTRONE charging stations across India.</p>
-                <div class="map-placeholder">
-                    <!-- Placeholder for an interactive map of India with charging points from Mapbox/OpenStreetMap or a static image -->
-                    <!-- For a real map, you'd integrate a JS library like Leaflet or Google Maps API -->
-                    <img src="https://bolt-wordpress.bolt.earth/wp-content/uploads/What_to_expect_2030_4_1a5f1fd3f9.jpg" alt="Interactive India Map" class="img-fluid">
-                    <p>Interactive map coming soon! Currently serving major cities like Delhi, Mumbai, Bangalore, Chennai, Hyderabad, and Kolkata.</p>
-                </div>
-                <div class="text-center mt-4">
-                    <a href="#" class="btn btn-primary" id="locate-charger-btn">Locate Charger (Google Maps)</a>
+                <h2 class="text-center mb-5">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-lightbulb fa-3x mb-3"></i>
+                        <h3>Innovation</h3>
+                        <p>Constantly pushing boundaries to develop smarter, more efficient charging technologies.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-handshake fa-3x mb-3"></i>
+                        <h3>Reliability</h3>
+                        <p>Delivering products and services that our customers can always count on, backed by rigorous quality control.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-leaf fa-3x mb-3"></i>
+                        <h3>Sustainability</h3>
+                        <p>Committed to eco-friendly practices and promoting a cleaner environment through electric mobility.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h3>Customer Centricity</h3>
+                        <p>Placing our customers at the heart of everything we do, ensuring exceptional support and satisfaction.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-medal fa-3x mb-3"></i>
+                        <h3>Quality & Safety</h3>
+                        <p>Adhering to the highest industry standards with IS & BIS certified products and secure installations.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-gavel fa-3x mb-3"></i>
+                        <h3>Integrity</h3>
+                        <p>Operating with transparency, honesty, and ethical conduct in all our dealings.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials-section section-padding">
+        <section class="section-padding team-section bg-light">
             <div class="container">
-                <h2>What Our Customers Say</h2>
-                <div class="testimonial-slider">
-                    <!-- Placeholder for dynamic testimonials -->
-                    <div class="testimonial-card">
-                        <p>"EVTRONE made installing a home charger incredibly easy. The product is top-notch and their support is fantastic!"</p>
-                        <h4>- Rahul Sharma, EV Owner</h4>
+                <h2 class="text-center mb-5">Meet Our Leadership</h2>
+                <div class="team-grid">
+                    <div class="team-member-card">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHaCyQrUMgtYA/profile-displayphoto-scale_200_200/B4DZlG6D4wGQAY-/0/1757831251099?e=2147483647&v=beta&t=5iymUf7u6NI2Y8ojkr5gIvQUxDsJ0il4ELops8FnLp8" alt="CEO Profile">
+                        <h3>Subhas Gayen</h3>
+                        <p class="role">Founder & CEO</p>
+                        <p>A visionary leader with over 20 years of experience in the energy and infrastructure sectors. Rajesh is the driving force behind EVTRONE's mission to electrify India.</p>
                     </div>
-                    <div class="testimonial-card">
-                        <p>"Our fleet now runs seamlessly thanks to EVTRONE's fast chargers and robust management system. Highly recommended for businesses."</p>
-                        <h4>- Priya Singh, Fleet Manager</h4>
+                    <div class="team-member-card">
+                        <img src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/525264479_1980617122478114_5222868142480339000_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=oIEuxbs9p-0Q7kNvwEiG9Vl&_nc_oc=AdnGp7FeR3pn5Rs-EDF3anzqUPRrucPFpo4fPZLG7XFFoQ9qMIxiEJrgO1IKealnpCo&_nc_zt=23&_nc_ht=scontent.fccu16-1.fna&_nc_gid=wCTa4VVd_01crcuUkj2b6g&oh=00_AfeMNkbxdSdAIYxqNiu9Vw9fPN5vuduir7lXnf4umCBjkA&oe=68F6C31A" alt="CTO Profile">
+                        <h3>Dr. Ankita Mukherjee</h3>
+                        <p class="role">Chief Technology Officer (CTO)</p>
+                        <p>With a Ph.D. in Electrical Engineering, Anjali spearheads EVTRONE's R&D initiatives, bringing groundbreaking innovations to our charging solutions.</p>
                     </div>
-                    <div class="testimonial-card">
-                        <p>"As a developer, partnering with EVTRONE was a smart choice. Their commercial solutions are reliable and future-proof."</p>
-                        <h4>- Anand Kumar, Real Estate Developer</h4>
+                    <div class="team-member-card">
+                        <img src="https://media.licdn.com/dms/image/v2/C5103AQHRlwj1nTO6QQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1561571781598?e=2147483647&v=beta&t=FQPd2FP60TR5sho-f0ZWpXbCoQH26mcVRo5DM1ExfUE" alt="COO Profile">
+                        <h3>Pronab Kr. Halder</h3>
+                        <p class="role">Chief Operations Officer (COO)</p>
+                        <p>Vikram ensures seamless operations from manufacturing to nationwide installations, optimizing efficiency and maintaining EVTRONE's high standards.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Blog/Insights Section -->
-        <section id="blog-insights" class="blog-section bg-light section-padding">
+        <section class="section-padding partners-section">
             <div class="container">
-                <h2>Latest Insights & News</h2>
-                <div class="blog-grid">
-                    <article class="blog-post-card">
-                        <!-- Image from Unsplash for EV Technology -->
-                        <img src="https://images.unsplash.com/photo-1549490349-8643362c394e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="EV Technology Article">
-                        <h3>The Future of EV Battery Technology</h3>
-                        <p>Explore the latest advancements and what they mean for range and charging speed...</p>
-                        <a href="#" class="btn btn-text">Read More</a>
-                    </article>
-                    <article class="blog-post-card">
-                        <!-- Image from Unsplash for Government Policy -->
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Government Policy Article">
-                        <h3>Understanding India's EV Subsidy Policies 2024</h3>
-                        <p>A comprehensive guide to government incentives for EV adoption and charging infrastructure...</p>
-                        <a href="#" class="btn btn-text">Read More</a>
-                    </article>
-                    <article class="blog-post-card">
-                        <!-- Image from Unsplash for Green Energy -->
-                        <img src="https://images.unsplash.com/photo-1543161358-18e478546114?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Green Energy Article">
-                        <h3>Solar Power and EV Charging: A Perfect Match</h3>
-                        <p>How integrating solar energy can make your EV charging even more sustainable...</p>
-                        <a href="#" class="btn btn-text">Read More</a>
-                    </article>
-                </div>
-                <div class="text-center mt-4">
-                    <a href="#" class="btn btn-primary">Visit Our Blog</a>
+                <h2 class="text-center mb-5">Our Valued Partners & Certifications</h2>
+                <div class="partners-logos">
+                    <!-- Placeholder logos for partners and government bodies -->
+                    <img src="https://via.placeholder.com/150x60/dddddd/333333?text=Partner+A" alt="Partner A">
+                    <img src="https://via.placeholder.com/150x60/dddddd/333333?text=Partner+B" alt="Partner B">
+                    <img src="https://via.placeholder.com/150x60/dddddd/333333?text=Government+Logo" alt="Government Logo">
+                    <img src="https://via.placeholder.com/150x60/dddddd/333333?text=ISO+Certified" alt="ISO Certified">
+                    <img src="https://via.placeholder.com/150x60/dddddd/333333?text=BIS+Certified" alt="BIS Certified">
                 </div>
             </div>
         </section>
 
-        <!-- Mobile App Integration Preview -->
-        <section id="app-preview" class="app-preview-section section-padding">
-            <div class="container">
-                <div class="app-content">
-                    <div class="app-text">
-                        <h2>Manage Your Charging with the EVTRONE App</h2>
-                        <p>Experience seamless control, real-time monitoring, and smart charging features right from your smartphone. Locate chargers, check availability, start/stop sessions, and track your usage effortlessly.</p>
-                        <div class="app-stores">
-                            <!-- Placeholder images for App Store and Google Play buttons -->
-                            <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store"></a>
-                            <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
-                        </div>
-                    </div>
-                    <div class="app-mockup">
-                        <!-- App mockup image from a placeholder service -->
-                        <img src="https://via.placeholder.com/350x650/007BFF/ffffff?text=EVTRONE+App+Mockup" alt="EVTRONE Mobile App Mockup">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Us Section (brief version for homepage) -->
-        <section id="contact-home" class="contact-home-section bg-dark text-white section-padding">
-            <div class="container text-center">
-                <h2>Ready to Power Up?</h2>
-                <p class="section-subtitle">Get in touch with EVTRONE today.</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Contact Us Now</a>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
@@ -249,7 +156,6 @@
                     <h3>EVTRONE</h3>
                     <p>India's trusted name in EV charging solutions. Powering a sustainable tomorrow with innovation and reliability.</p>
                     <div class="social-links">
-                        <!-- Font Awesome icons for social media -->
                         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -272,7 +178,6 @@
                     <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
                     <p>Office: [Your Main Office Address, India]</p>
                     <div class="footer-certifications">
-                        <!-- Placeholder images for ISO and BIS certifications -->
                         <img src="https://via.placeholder.com/80x40/cccccc/333333?text=ISO" alt="ISO Certified">
                         <img src="https://via.placeholder.com/80x40/cccccc/333333?text=BIS" alt="BIS Certified">
                     </div>
@@ -290,7 +195,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
