@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EVTRONE - Get in Touch for EV Charging Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/modern-components.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">EVTRONE</a>
+                <div class="menu-toggle">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Solutions</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-switch">
+                    <label for="dark-mode-switch"></label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero text-white text-center">
+            <!-- Background slideshow -->
+            <div class="hero-slideshow" aria-hidden="true">
+                <div class="slide" style="background-image: url('https://d1eipm3vz40hy0.cloudfront.net/images/AMER/CustomerSupportBlogHero.png');"></div>
+                <div class="slide" style="background-image: url('https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1585157958423-Customer%20Support.png');"></div>
+                <div class="slide" style="background-image: url('https://fluentsupport.com/wp-content/uploads/2022/02/Difference-between-Customer-Support-and-Customer-Service-01-scaled.jpg');"></div>
+                <div class="slide" style="background-image: url('https://support.cc/images/blog/customer-service-skills-and-qualities.png');"></div>
+                <div class="slideshow-dots" aria-hidden="false"></div>
+            </div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <div class="container">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="section-subtitle hero-lead">We're here to help you with all your EV charging needs. Contact our team for installations, product enquiries and support.</p>
+                <div class="hero-actions" style="margin-top:18px;">
+                    <a href="tel:+918276806183" class="btn-modern" style="margin-right:10px;"><i class="fas fa-phone-alt"></i> Call Support</a>
+                    <a href="#" class="btn btn-link">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding contact-info-section">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="card-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Our support team is available during business hours.</p>
+                        <a href="tel:+918276806183" class="contact-link">+91 82768 06183</a>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Send us your queries and we'll get back to you promptly.</p>
+                        <a href="mailto:info@evtrone.com" class="contact-link">info@evtrone.com</a>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp Chat</h3>
+                        <p>Quick support via WhatsApp for immediate assistance.</p>
+                        <a href="https://wa.me/918001355241" target="_blank" class="contact-link">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light inquiry-form-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Send Us Your Inquiry</h2>
+                <div class="form-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Product Inquiry, Installation Request">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding office-locations-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Office Locations in India</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3>Head Office - Delhi</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123, EVTRONE Towers, Connaught Place, New Delhi - 110001</p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+911123456789">+91 11 2345 6789</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:delhi@evtrone.com">delhi@evtrone.com</a></p>
+                    </div>
+                    <div class="location-card">
+                        <h3>Regional Office - Bengaluru</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 456, Tech Park Road, Koramangala, Bengaluru - 560034</p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+918098765432">+91 80 9876 5432</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:bengaluru@evtrone.com">bengaluru@evtrone.com</a></p>
+                    </div>
+                    <div class="location-card">
+                        <h3>Regional Office - Mumbai</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 789, Business Bay, Bandra-Kurla Complex, Mumbai - 400051</p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+912212345678">+91 22 1234 5678</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:mumbai@evtrone.com">mumbai@evtrone.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Locate Our Head Office</h2>
+                <div class="google-map-embed">
+                    <!-- Placeholder for Google Maps Embed -->
+                    <!-- Replace with your actual Google Maps embed iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d441.6639137799605!2d88.45356717109439!3d22.279892222944625!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d22.279752!2d88.4534438!5e1!3m2!1sen!2sin!4v1760855727625!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>EVTRONE</h3>
+                    <p>India's trusted name in EV charging solutions. Powering a sustainable tomorrow with innovation and reliability.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="services.html">Solutions & Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-info-col">
+                    <h3>Contact Info</h3>
+                    <p>Email: <a href="mailto:info@evtrone.com">info@evtrone.com</a></p>
+                    <p>Phone: <a href="tel:+918276806183">+91 82768 06183</a></p>
+                    <p>Office: Naryani Tala, Gocharan, Jaynagar, Kolkata - 743391, West Bengal, India</p>
+                    <div class="footer-certifications">
+                        <img src="https://validmfg.com/wp-content/uploads/valid-iso-9001-2015-certification.jpg" alt="ISO Certified">
+                        <img src="https://mechanalyticgroup.com/wp-content/uploads/2023/12/bis-certification-service-500x500-1.webp" alt="BIS Certified">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EVTRONE. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
