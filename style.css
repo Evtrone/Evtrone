@@ -1771,3 +1771,263 @@ body.dark-mode .location-card p a {
         height: 280px;
     }
 }
+
+
+
+
+
+
+
+/* --- Styles for Careers Page (career.html) --- */
+
+.career-hero {
+    background-image: url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Diverse team collaborating */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.career-hero::before { /* Dark overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.career-hero h1, .career-hero .section-subtitle, .career-hero .btn {
+    position: relative; /* Bring content above overlay */
+    z-index: 2;
+}
+
+
+.join-us-section .join-us-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+body.dark-mode .benefit-card {
+    background-color: var(--light-gray);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.benefit-card i {
+    font-size: 3.5rem;
+    color: var(--eco-green); /* Use eco green for benefits */
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    color: var(--electric-blue);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-color-light);
+}
+
+.open-positions-section .job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.job-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    display: flex; /* For consistent layout */
+    flex-direction: column;
+}
+body.dark-mode .job-card {
+    background-color: var(--light-gray);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.job-card h3 {
+    font-size: 1.5rem;
+    color: var(--electric-blue);
+    margin-bottom: 10px;
+}
+
+.job-card .job-meta {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.job-card .job-meta i {
+    color: var(--eco-green);
+    margin-right: 5px;
+}
+
+.job-card p {
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    flex-grow: 1; /* Push button to bottom */
+    margin-bottom: 20px;
+}
+body.dark-mode .job-card p {
+    color: var(--text-color-dark);
+}
+
+
+.job-card .btn-text {
+    align-self: flex-start; /* Align "Apply Now" to start */
+    margin-top: auto; /* Push to the bottom */
+}
+
+.job-card.no-positions {
+    background-color: var(--light-gray); /* Slightly different background for "no positions" */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px dashed var(--medium-gray);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px; /* Ensure it's tall enough */
+}
+body.dark-mode .job-card.no-positions {
+    background-color: var(--medium-gray);
+    border-color: var(--dark-gray);
+}
+.job-card.no-positions h3 {
+    color: var(--eco-green);
+}
+.job-card.no-positions p {
+    color: var(--text-color-light);
+    max-width: 80%;
+    margin: 10px auto 20px auto;
+}
+.job-card.no-positions .btn {
+    margin-top: 0;
+}
+
+
+/* --- Responsive Adjustments for Careers Page --- */
+@media (max-width: 1024px) {
+    .career-hero h1 {
+        font-size: 3rem;
+    }
+    .career-hero .section-subtitle {
+        font-size: 1.1rem;
+    }
+    .join-us-section .join-us-content {
+        font-size: 1rem;
+    }
+    .benefits-grid, .job-listings {
+        gap: 20px;
+    }
+    .benefit-card, .job-card {
+        padding: 25px;
+    }
+    .benefit-card i {
+        font-size: 3rem;
+    }
+    .benefit-card h3, .job-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-hero h1 {
+        font-size: 2.5rem;
+    }
+    .career-hero .section-subtitle {
+        font-size: 1rem;
+    }
+    .benefits-grid, .job-listings {
+        grid-template-columns: 1fr;
+    }
+    .benefit-card, .job-card {
+        padding: 20px;
+    }
+    .benefit-card i {
+        font-size: 2.8rem;
+    }
+    .benefit-card h3, .job-card h3 {
+        font-size: 1.2rem;
+    }
+    .job-card .job-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .job-card .job-meta i {
+        margin-right: 0; /* Remove right margin when stacked */
+    }
+}
+
+@media (max-width: 480px) {
+    .career-hero h1 {
+        font-size: 2rem;
+    }
+    .career-hero .section-subtitle {
+        font-size: 0.9rem;
+    }
+    .benefit-card h3, .job-card h3 {
+        font-size: 1.1rem;
+    }
+    .job-card .job-meta {
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 600px) {
+    h1.fade-in,
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 0.4rem;
+        padding: 0 1rem;
+        word-break: break-word;
+    }
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+    .hero-stats .stat-number {
+        font-size: 1.5rem;
+    }
+    .hero-stats .stat-label {
+        font-size: 1rem;
+    }
+}
